@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+}
+
+header {
+  height: 400px;
+  background: url("/images/Banner_Tab.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main {
+  min-height: 100vh;
+}
+
+footer {
+  padding: 10px;
+  height: 80px;
+  background-color: rgb(44, 44, 44);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+footer>div span,img{
+    margin: 0 25px;
+}
+
+footer img {
+    position: absolute;
+    right: 0;
+}
+
+#footer-br {
+    display: none;
+}
+
+@media screen and (max-width: 1280px) {
+    header {
+        width: 100%;
+        height: 380px;
+        background: url("images/Banner01.jpg");
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    header {
+        width: 100%;
+        height: 280px;
+        background: url("images/Banner01.jpg");
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        height: 300px;
+        background: url("images/Banner_mo.jpg");
+        background-size: cover;
+    }
+    footer>div span,img{
+        margin: 0;
+    }
+    #footer-br {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 448px) {
+    header {
+        width: 100%;
+        height: 300px;
+        background: url("images/Banner_mo.jpg");
+        background-size: cover;
+    }
+    footer {
+        font-size:65%;
+    }
+    #footer-br {
+        display: block;
+    }
+}
