@@ -1,5 +1,9 @@
+@import url("/fonts/OpenSans-Regular.eot");
+@import url("/fonts/OpenSans-Regular.ttf");
+
 body {
   margin: 0;
+  font-family: OpenSans-Regular;
 }
 
 header {
@@ -14,6 +18,34 @@ main {
   min-height: 100vh;
 }
 
+nav {
+  text-align: center;
+}
+
+.main-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+h1 {
+  color: rgb(255, 217, 0);
+  text-align: center;
+  font-size: 4.5vw;
+}
+
+.main-content img {
+  margin: 0;
+  width: 100%;
+}
+
+#pencil-mob {
+  display: none;
+}
+
 footer {
   padding: 10px;
   height: 80px;
@@ -23,63 +55,71 @@ footer {
   align-items: center;
 }
 
-footer>div span,img{
-    margin: 0 25px;
+footer > div span,
+img {
+  margin: 0 25px;
 }
 
 footer img {
-    position: absolute;
-    right: 0;
+  position: absolute;
+  right: 0;
 }
 
 #footer-br {
-    display: none;
+  display: none;
 }
 
 @media screen and (max-width: 1280px) {
-    header {
-        width: 100%;
-        height: 380px;
-        background: url("images/Banner01.jpg");
-        background-size: cover;
-    }
+  header {
+    width: 100%;
+    height: 380px;
+    background: url("images/Banner01.jpg");
+    background-size: cover;
+  }
 }
 
 @media screen and (max-width: 1080px) {
-    header {
-        width: 100%;
-        height: 280px;
-        background: url("images/Banner01.jpg");
-        background-size: cover;
-    }
+  header {
+    width: 100%;
+    height: 280px;
+    background: url("images/Banner01.jpg");
+    background-size: cover;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    header {
-        width: 100%;
-        height: 300px;
-        background: url("images/Banner_mo.jpg");
-        background-size: cover;
-    }
-    footer>div span,img{
-        margin: 0;
-    }
-    #footer-br {
-        display: block;
-    }
+  header {
+    width: 100%;
+    height: 300px;
+    background: url("images/Banner_mo.jpg");
+    background-size: cover;
+  }
+  #pencil {
+    display: none;
+  }
+  #pencil-mob {
+    display: block;
+  }
+  footer > div span,
+  img {
+    margin: 0;
+  }
+  #footer-br {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 448px) {
-    header {
-        width: 100%;
-        height: 300px;
-        background: url("images/Banner_mo.jpg");
-        background-size: cover;
-    }
-    footer {
-        font-size:65%;
-    }
-    #footer-br {
-        display: block;
-    }
+  header {
+    width: 100%;
+    height: 300px;
+    background: url("images/Banner_mo.jpg");
+    background-size: cover;
+  }
+  footer {
+    font-size: 65%;
+  }
+  #footer-br {
+    display: block;
+  }
 }
