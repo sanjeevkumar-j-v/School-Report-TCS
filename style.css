@@ -40,6 +40,7 @@ h1 {
 }
 
 .main-content img {
+  width: 100%;
   margin: 0;
 }
 
@@ -53,19 +54,79 @@ h1 {
 
 /* Styles for Subject Dashboard */
 table {
-  width:100%;
+  width: 100%;
 }
-
-table, th, td {
+table,
+th,
+td {
   border: 1px solid black;
   border-collapse: collapse;
 }
-
+th {
+  padding: 5px;
+  height: 30px;
+}
+tr td {
+  padding: 5px;
+  height: 50px;
+  text-align: center;
+}
+tr td:first-child {
+  text-align: left;
+}
 table img {
-  width: 50px;
+  height: 35px !important;
+  width: auto !important;
 }
 
+#subject-dashboard tr td:nth-child(odd) {
+  width: 150px;
+}
+#subject-dashboard tr td:nth-child(even) {
+  width: 150px;
+}
 
+#subject-dashboard tr td:first-child {
+  width: 300px;
+}
+
+#subject-dashboard tr:nth-child(odd) td:nth-child(1),
+#subject-dashboard tr:nth-child(odd) td:last-child {
+  background-color: #e6f9ff;
+}
+#subject-dashboard tr:nth-child(even) td:nth-child(2),
+#subject-dashboard tr:nth-child(even) td:nth-child(3) {
+  background-color: #ecfcd8;
+}
+#subject-dashboard tr:nth-child(even) td:nth-child(4),
+#subject-dashboard tr:nth-child(even) td:nth-child(5) {
+  background-color: #fcf7b3;
+}
+
+.hblue {
+  background-color: #309dd5 !important;
+  color: white !important;
+}
+.cblue {
+  background-color: #e6f9ff !important;
+}
+.hgreen {
+  background-color: #8ec63f !important;
+}
+.cgreen {
+  background-color: #ecfcd8 !important;
+}
+.hyellow {
+  background-color: #fef454 !important;
+}
+.cyellow {
+  background-color: #fcf7b3 !important;
+}
+.note-list {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 20px;
+}
 /* Styles for footer, which is same for all */
 footer {
   padding: 10px;
