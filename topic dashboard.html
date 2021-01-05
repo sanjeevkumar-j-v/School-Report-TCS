@@ -18,8 +18,8 @@
       </nav>
       <section class="main-content">
         <h1>Topic Dashboard</h1>
-        <div>
-          <div>
+        <div id="topic-dashboard">
+          <div id="topic-selector">
             <label for="topics"><b>Select Topic:</b></label>
             <select name="topic" id="topic">
               <option value="Powers and Exponents">Powers and Exponents</option>
@@ -29,39 +29,45 @@
               <option value="topic name">topic name</option>
             </select>
           </div>
-          <div>
+          <div class="tables-container">
             <div>
               <b>Assesment Completion Rate</b>
-              <table>
+              <table id="assesment-completion-rate-table">
                 <tr>
-                  <th>Attempt 1</th>
-                  <th>Attempt 2</th>
+                  <th class="hblue">Attempt 1</th>
+                  <th class="hblue">Attempt 2</th>
                 </tr>
                 <tr>
-                  <td>100%</td>
-                  <td>80%</td>
+                  <td class="cblue"><b>100%</b></td>
+                  <td class="cblue"><b>80%</b></td>
                 </tr>
               </table>
             </div>
             <div>
               <b>Overall Performance</b>
-              <table>
+              <table id="overall-performance-table">
                 <tr>
-                  <th>Attempt 1</th>
-                  <th>Attempt 2</th>
-                  <th>Gains</th>
+                  <th class="hblue">Attempt 1</th>
+                  <th class="hblue">Attempt 2</th>
+                  <th class="hblue">Gains</th>
                 </tr>
                 <tr>
-                  <td><img src="/images/Level_002.png" alt="" /></td>
-                  <td><img src="/images/Level_004.png" alt="" /></td>
-                  <td><img src="/images/Positive_01.png" alt="" /></td>
+                  <td class="cblue">
+                    <img src="/images/Level_003.png" alt="" />
+                  </td>
+                  <td class="cblue">
+                    <img src="/images/Level_004.png" alt="" />
+                  </td>
+                  <td class="cblue">
+                    <img src="/images/Positive_01.png" alt="" />
+                  </td>
                 </tr>
               </table>
             </div>
           </div>
-          <div>
+          <div class="table-container">
             <b>Concept and Application Wise Performance:</b>
-            <table>
+            <table id="concept-application-table">
               <tr>
                 <th>Concepts and Applications</th>
                 <th>Attempt 1</th>
@@ -69,9 +75,7 @@
                 <th>Gains</th>
               </tr>
               <tr>
-                <td>
-                  Exponents and Decimal System
-                </td>
+                <td>Exponents and Decimal System</td>
                 <td><img src="/images/Level_002.png" alt="" /></td>
                 <td><img src="/images/Level_004.png" alt="" /></td>
                 <td><img src="/images/Positive_01.png" alt="" /></td>
@@ -85,19 +89,17 @@
                 <td><img src="/images/Positive_01.png" alt="" /></td>
               </tr>
               <tr>
-                <td>
-                  Expression Large Numbers in the Standard Form
-                </td>
+                <td>Expression Large Numbers in the Standard Form</td>
                 <td><img src="/images/Level_003.png" alt="" /></td>
                 <td><img src="/images/Level_003.png" alt="" /></td>
                 <td><img src="/images/Positive_01.png" alt="" /></td>
               </tr>
             </table>
           </div>
-          <div>
+          <div class="table-container">
             <b>Learning Indicator Wise Performance:</b>
 
-            <table>
+            <table id="learn-indicator-table">
               <tr>
                 <th>Concept</th>
                 <th>Attempt 1</th>
@@ -106,7 +108,7 @@
               </tr>
               <tr>
                 <td>
-                  Identifies tde correct exponent form(e.g. 34) given a repeated
+                  Identifies the correct exponent form(e.g. 34) given a repeated
                   product
                 </td>
                 <td><img src="/images/Level_002.png" alt="" /></td>
@@ -115,7 +117,7 @@
               </tr>
               <tr>
                 <td>
-                  Identifies tde correct repeated product given an exponent form
+                  Identifies the correct repeated product given an exponent form
                 </td>
                 <td><img src="/images/Level_003.png" alt="" /></td>
                 <td><img src="/images/Level_004.png" alt="" /></td>
@@ -124,7 +126,7 @@
               <tr>
                 <td>
                   Identifies correct expansion of a multi-digit number as using
-                  powers of tde tent
+                  powers of the tent
                 </td>
                 <td><img src="/images/Level_003.png" alt="" /></td>
                 <td><img src="/images/Level_003.png" alt="" /></td>
@@ -132,8 +134,8 @@
               </tr>
               <tr>
                 <td>
-                  Locates tde odd one involving tde product of two exponent
-                  forms witd tde same bases
+                  Locates the odd one involving the product of two exponent
+                  forms witd the same bases
                 </td>
                 <td><img src="/images/Level_003.png" alt="" /></td>
                 <td><img src="/images/Level_004.png" alt="" /></td>
