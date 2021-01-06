@@ -112,6 +112,7 @@ table img {
 }
 .hgreen {
   background-color: #8ec63f !important;
+  color: white;
 }
 .cgreen {
   background-color: #ecfcd8 !important;
@@ -167,7 +168,7 @@ table img {
 .tables-container div:first-child {
   margin-right: 4%;
 }
-.tables-container table td, th, table {
+.tables-container table td, table {
   text-align: center;
   border: 0;
 }
