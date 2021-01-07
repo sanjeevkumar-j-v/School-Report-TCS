@@ -106,6 +106,7 @@ table img {
 .hblue {
   background-color: #309dd5 !important;
   color: white !important;
+  border: 1px solid #006192;
 }
 .cblue {
   background-color: #e6f9ff !important;
@@ -113,12 +114,14 @@ table img {
 .hgreen {
   background-color: #8ec63f !important;
   color: white;
+  border: 1px solid #4b8100;
 }
 .cgreen {
   background-color: #ecfcd8 !important;
 }
 .hyellow {
   background-color: #fef454 !important;
+  border: 1px solid #d1c300;
 }
 .cyellow {
   background-color: #fcf7b3 !important;
@@ -186,6 +189,54 @@ table img {
   border: 1px solid #b1b1b1;
 }
 
+/* Questions Dashboard */
+#option-analysis-table table {
+  width: 100%;
+  font-size: 20px;;
+}
+#option-analysis-table table td,
+#option-analysis-table table th {
+  border-width: 2px !important;
+}
+#option-analysis-table table tr td:first-child{
+  text-align: center;
+}
+#option-analysis-table table a{
+  text-decoration: none;
+}
+#option-analysis-table table tr td{
+  border: 1px solid rgb(0, 133, 18);
+}
+#option-analysis-table table tr td:nth-child(1),
+#option-analysis-table table tr td:nth-child(2),
+#option-analysis-table table tr td:nth-child(3) {
+  border: 1px solid rgb(0, 122, 170);
+}
+#option-analysis-table table tr:nth-child(even) td {
+  background-color: rgb(243, 243, 243);
+}
+#option-analysis-table table tr:nth-child(even) td:nth-child(1),
+#option-analysis-table table tr:nth-child(even) td:nth-child(3) {
+  background-color: rgb(215, 249, 255);
+}
+.width-50by3 {
+  width: 16.66%;
+}
+.width-50by4 {
+  width: 12.5%;
+}
+.c25 {
+  background-color: #ed1b24 !important;
+}
+.c50 {
+  background-color: #fe6b01 !important;
+}
+.c75 {
+  background-color: #fef200 !important;
+}
+.c100 {
+  background-color: #8ec63f !important;
+}
 /* Styles for footer, which is same for all */
 footer {
   padding: 10px;
