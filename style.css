@@ -40,8 +40,8 @@ h1 {
 }
 
 .main-content img {
-  width: 100%;
-  margin: 0;
+  /* width: 100%;
+  margin: 0; */
 }
 
 /* Styles for Homepage */
@@ -190,6 +190,9 @@ table img {
 }
 
 /* Questions Dashboard */
+#questions-dashboard {
+  width: 100%;
+}
 #option-analysis-table table {
   width: 100%;
   font-size: 20px;;
@@ -236,6 +239,34 @@ table img {
 }
 .c100 {
   background-color: #8ec63f !important;
+}
+#question-container {
+  margin: 40px 5px;
+  padding: 5%;
+  width: 90%;
+  border: 1px solid blue;
+  background-color: #f6fafd;
+  min-height: 300px;
+}
+#navigator-button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  color: rgb(0, 110, 255)
+}
+#navigator-button img{
+  width: 20px;
+  height: 15px;
+  transform: rotate(180deg);
+  margin-right: 5px;
+}
+.question img {
+  width: 100%;
+  margin: 0;
+}
+.options img{
+  display: block;
+  margin: 10px;
 }
 /* Styles for footer, which is same for all */
 footer {
