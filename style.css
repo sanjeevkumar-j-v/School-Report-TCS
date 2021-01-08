@@ -150,14 +150,15 @@ table img {
 #topic-dashboard table {
   margin: 25px 0;
 }
-#topic-dashboard table td{
+#topic-dashboard table td {
   border: 0;
 }
-#topic-dashboard table th{
+#topic-dashboard table th {
   color: white;
   font-size: 20px;
 }
-#topic-dashboard table th, table td{
+#topic-dashboard table th,
+#topic-dashboard table td {
   height: 60px;
   padding: 10px 25px;
 }
@@ -171,7 +172,8 @@ table img {
 .tables-container div:first-child {
   margin-right: 4%;
 }
-.tables-container table td, table {
+.tables-container table td,
+table {
   text-align: center;
   border: 0;
 }
@@ -185,7 +187,7 @@ table img {
 .table-container tr:nth-child(odd) {
   background-color: #ebebeb;
 }
-.table-container table tr{
+.table-container table tr {
   border: 1px solid #b1b1b1;
 }
 
@@ -193,21 +195,43 @@ table img {
 #questions-dashboard {
   width: 100%;
 }
+#indicator-details {
+  margin: 80px 0 30px 0;
+  display: flex;
+  width: 90%;
+}
+#indicator-details>div {
+  display: flex;
+  flex-direction: row;
+  /* padding: 30px 70px 0 0; */
+}
+.indicator-image {
+  height: 20px !important;
+  width: 20px !important;
+  margin-right: 20px;
+  display: inline-block;
+}
+.indicator-color {
+  height: 20px !important;
+  width: 20px !important;
+  margin-right: 10px;
+  display: inline-block;
+}
 #option-analysis-table table {
   width: 100%;
-  font-size: 20px;;
+  font-size: 20px;
 }
 #option-analysis-table table td,
 #option-analysis-table table th {
   border-width: 2px !important;
 }
-#option-analysis-table table tr td:first-child{
+#option-analysis-table table tr td:first-child {
   text-align: center;
 }
-#option-analysis-table table a{
+#option-analysis-table table a {
   text-decoration: none;
 }
-#option-analysis-table table tr td{
+#option-analysis-table table tr td {
   border: 1px solid rgb(0, 133, 18);
 }
 #option-analysis-table table tr td:nth-child(1),
@@ -247,14 +271,15 @@ table img {
   border: 1px solid blue;
   background-color: #f6fafd;
   min-height: 300px;
+  font-size: 20px;
 }
 #navigator-button {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  color: rgb(0, 110, 255)
+  color: rgb(0, 110, 255);
 }
-#navigator-button img{
+#navigator-button img {
   width: 20px;
   height: 15px;
   transform: rotate(180deg);
@@ -264,9 +289,29 @@ table img {
   width: 100%;
   margin: 0;
 }
-.options img{
+.options img {
   display: block;
   margin: 10px;
+}
+#options-table td {
+  border: 0;
+}
+#options-table td {
+  padding: 0px;
+  height: 15px;
+}
+#options-table img {
+  width: 40vw;
+  height: 6px;
+  margin: 0;
+}
+#options-table td:nth-child(1) {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+}
+.answer img {
+  width: 100%;
 }
 /* Styles for footer, which is same for all */
 footer {
@@ -279,7 +324,7 @@ footer {
 }
 
 footer > div span,
-img {
+footer img {
   margin: 0 25px;
 }
 
