@@ -1,9 +1,5 @@
-@import url("/fonts/OpenSans-Regular.eot");
-@import url("/fonts/OpenSans-Regular.ttf");
-
 body {
   margin: 0;
-  font-family: OpenSans-Regular;
 }
 
 /* Styles for header, which is same for all */
@@ -20,11 +16,12 @@ nav {
   width: 100%;
   height: 10vh;
   font-size: 4vw;
-  background:rgb(119, 119, 119);
+  background: rgb(119, 119, 119);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
+  text-align: center;
 }
 nav a {
   width: 100%;
@@ -35,6 +32,7 @@ nav a {
   text-decoration: none;
   color: white;
 }
+/* on hover change styles */
 nav a:hover {
   background: rgb(199, 199, 199);
   color: black;
@@ -46,15 +44,11 @@ nav a:hover {
 .active:hover {
   background: rgba(255, 255, 255);
 }
-/* Common styles for content area */
+/* Common styles for main */
 main {
   min-height: 100vh;
 }
-
-nav {
-  text-align: center;
-}
-
+/* common styles for main content */
 .main-content {
   height: 100%;
   display: flex;
@@ -63,16 +57,11 @@ nav {
   align-items: center;
   padding: 5%;
 }
-
+/* common style for heading */
 h1 {
   color: #fdc224;
   font-size: 4.5vw;
   width: 100%;
-}
-
-.main-content img {
-  /* width: 100%;
-  margin: 0; */
 }
 
 /* Styles for Homepage */
@@ -82,7 +71,10 @@ h1 {
 #pencil-mob {
   display: none;
 }
-
+.home-content img {
+  width: 100%;
+  margin: 0;
+}
 /* Styles for Subject Dashboard */
 table {
   width: 100%;
@@ -133,11 +125,11 @@ table img {
 #subject-dashboard tr:nth-child(even) td:nth-child(5) {
   background-color: #fcf7b3;
 }
-
+/* colors for headings and row cells */
 .hblue {
   background-color: #309dd5 !important;
   color: white !important;
-  border: 1px solid #006192;
+  /* border: 1px solid #006192; */
 }
 .cblue {
   background-color: #e6f9ff !important;
@@ -204,7 +196,8 @@ table img {
   margin-right: 4%;
 }
 .tables-container table td,
-table {
+.tables-container table th,
+.tables-container table {
   text-align: center;
   border: 0;
 }
@@ -221,6 +214,9 @@ table {
 .table-container table tr {
   border: 1px solid #b1b1b1;
 }
+.table-container table th {
+  border: 0;
+}
 
 /* Questions Dashboard */
 #questions-dashboard {
@@ -231,7 +227,7 @@ table {
   display: flex;
   width: 90%;
 }
-#indicator-details>div {
+#indicator-details > div {
   display: flex;
   flex-direction: row;
   /* padding: 30px 70px 0 0; */
@@ -254,7 +250,7 @@ table {
 }
 #option-analysis-table table td,
 #option-analysis-table table th {
-  border-width: 2px !important;
+  border-width: 1.2px !important;
 }
 #option-analysis-table table tr td:first-child {
   text-align: center;
@@ -283,6 +279,7 @@ table {
 .width-50by4 {
   width: 12.5%;
 }
+/* colors for each percentage marks */
 .c25 {
   background-color: #ed1b24 !important;
 }
@@ -316,6 +313,7 @@ table {
   transform: rotate(180deg);
   margin-right: 5px;
 }
+/* questions of Questions Dashboard */
 .question img {
   width: 100%;
   margin: 0;
@@ -324,6 +322,7 @@ table {
   display: block;
   margin: 10px;
 }
+#options-table,
 #options-table td {
   border: 0;
 }
@@ -369,6 +368,7 @@ footer img {
 }
 
 /* Responsive designs */
+/* for more lengthy layouts */
 @media screen and (max-width: 1280px) {
   header {
     width: 100%;
@@ -377,7 +377,7 @@ footer img {
     background-size: cover;
   }
 }
-
+/* for computer screens */
 @media screen and (max-width: 1080px) {
   header {
     width: 100%;
@@ -386,7 +386,7 @@ footer img {
     background-size: cover;
   }
 }
-
+/* for minimized screens */
 @media screen and (max-width: 768px) {
   header {
     width: 100%;
@@ -407,8 +407,14 @@ footer img {
   #footer-br {
     display: block;
   }
+  .tables-container {
+    display: block;
+  }
+  .tables-container div {
+    width: 100%;
+  }
 }
-
+/* for mobile device screens */
 @media screen and (max-width: 448px) {
   header {
     width: 100%;
